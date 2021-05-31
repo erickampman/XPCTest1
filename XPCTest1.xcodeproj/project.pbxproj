@@ -11,7 +11,35 @@
 		E475F42726652BA60095892F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E475F42626652BA60095892F /* Assets.xcassets */; };
 		E475F42A26652BA60095892F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E475F42826652BA60095892F /* MainMenu.xib */; };
 		E475F42D26652BA60095892F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E475F42C26652BA60095892F /* main.m */; };
+		E475F43D26652BD40095892F /* TextService.m in Sources */ = {isa = PBXBuildFile; fileRef = E475F43C26652BD40095892F /* TextService.m */; };
+		E475F43F26652BD40095892F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E475F43E26652BD40095892F /* main.m */; };
+		E475F44326652BD40095892F /* TextService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = E475F43826652BD40095892F /* TextService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E475F44926653D800095892F /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E475F44826653D800095892F /* Notes.txt */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E475F44126652BD40095892F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E475F41826652BA50095892F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E475F43726652BD40095892F;
+			remoteInfo = TextService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E475F44726652BD40095892F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				E475F44326652BD40095892F /* TextService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E475F42026652BA50095892F /* XPCTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,24 @@
 		E475F42B26652BA60095892F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E475F42C26652BA60095892F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E475F42E26652BA60095892F /* XPCTest1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCTest1.entitlements; sourceTree = "<group>"; };
+		E475F43826652BD40095892F /* TextService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TextService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		E475F43A26652BD40095892F /* TextServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextServiceProtocol.h; sourceTree = "<group>"; };
+		E475F43B26652BD40095892F /* TextService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextService.h; sourceTree = "<group>"; };
+		E475F43C26652BD40095892F /* TextService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextService.m; sourceTree = "<group>"; };
+		E475F43E26652BD40095892F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E475F44026652BD40095892F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E475F44826653D800095892F /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E475F41D26652BA50095892F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475F43526652BD40095892F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +80,9 @@
 		E475F41726652BA50095892F = {
 			isa = PBXGroup;
 			children = (
+				E475F44826653D800095892F /* Notes.txt */,
 				E475F42226652BA50095892F /* XPCTest1 */,
+				E475F43926652BD40095892F /* TextService */,
 				E475F42126652BA50095892F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				E475F42026652BA50095892F /* XPCTest1.app */,
+				E475F43826652BD40095892F /* TextService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +110,18 @@
 			path = XPCTest1;
 			sourceTree = "<group>";
 		};
+		E475F43926652BD40095892F /* TextService */ = {
+			isa = PBXGroup;
+			children = (
+				E475F43A26652BD40095892F /* TextServiceProtocol.h */,
+				E475F43B26652BD40095892F /* TextService.h */,
+				E475F43C26652BD40095892F /* TextService.m */,
+				E475F43E26652BD40095892F /* main.m */,
+				E475F44026652BD40095892F /* Info.plist */,
+			);
+			path = TextService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,15 +132,34 @@
 				E475F41C26652BA50095892F /* Sources */,
 				E475F41D26652BA50095892F /* Frameworks */,
 				E475F41E26652BA50095892F /* Resources */,
+				E475F44726652BD40095892F /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E475F44226652BD40095892F /* PBXTargetDependency */,
 			);
 			name = XPCTest1;
 			productName = XPCTest1;
 			productReference = E475F42026652BA50095892F /* XPCTest1.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E475F43726652BD40095892F /* TextService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E475F44426652BD40095892F /* Build configuration list for PBXNativeTarget "TextService" */;
+			buildPhases = (
+				E475F43426652BD40095892F /* Sources */,
+				E475F43526652BD40095892F /* Frameworks */,
+				E475F43626652BD40095892F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextService;
+			productName = TextService;
+			productReference = E475F43826652BD40095892F /* TextService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +170,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					E475F41F26652BA50095892F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					E475F43726652BD40095892F = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -112,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				E475F41F26652BA50095892F /* XPCTest1 */,
+				E475F43726652BD40095892F /* TextService */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E475F42726652BA60095892F /* Assets.xcassets in Resources */,
+				E475F44926653D800095892F /* Notes.txt in Resources */,
 				E475F42A26652BA60095892F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E475F43626652BD40095892F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +226,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E475F43426652BD40095892F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E475F43F26652BD40095892F /* main.m in Sources */,
+				E475F43D26652BD40095892F /* TextService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E475F44226652BD40095892F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E475F43726652BD40095892F /* TextService */;
+			targetProxy = E475F44126652BD40095892F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E475F42826652BA60095892F /* MainMenu.xib */ = {
@@ -303,6 +408,34 @@
 			};
 			name = Release;
 		};
+		E475F44526652BD40095892F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R28W7FR6SE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TextService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unlikelyware.TextService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E475F44626652BD40095892F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R28W7FR6SE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TextService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unlikelyware.TextService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -320,6 +453,15 @@
 			buildConfigurations = (
 				E475F43226652BA60095892F /* Debug */,
 				E475F43326652BA60095892F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E475F44426652BD40095892F /* Build configuration list for PBXNativeTarget "TextService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E475F44526652BD40095892F /* Debug */,
+				E475F44626652BD40095892F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

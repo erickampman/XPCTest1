@@ -5,7 +5,64 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>1622BF58-0CD4-479E-A12B-4E12125F9C4F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>1622BF58-0CD4-479E-A12B-4E12125F9C4F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>XPCTest1-dabiardttagbuocxhrcrgaekttjl</string>
+			<key>timeStartedRecording</key>
+			<real>644169040.65087497</real>
+			<key>timeStoppedRecording</key>
+			<real>644169042.25255704</real>
+			<key>title</key>
+			<string>Build target XPCTest1</string>
+			<key>uniqueIdentifier</key>
+			<string>1622BF58-0CD4-479E-A12B-4E12125F9C4F</string>
+		</dict>
+		<key>845EF6C3-43DD-4608-A10C-3C9FAD0F066A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>845EF6C3-43DD-4608-A10C-3C9FAD0F066A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>TextService-dabiardttagbuocxhrcrgaekttjl</string>
+			<key>timeStartedRecording</key>
+			<real>644169040.36958003</real>
+			<key>timeStoppedRecording</key>
+			<real>644169040.82434297</real>
+			<key>title</key>
+			<string>Build target TextService</string>
+			<key>uniqueIdentifier</key>
+			<string>845EF6C3-43DD-4608-A10C-3C9FAD0F066A</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>

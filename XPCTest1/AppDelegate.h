@@ -9,6 +9,9 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property NSXPCConnection *connectionToService;
+@property (weak) IBOutlet NSTextField *textField;
+@property (weak) IBOutlet NSTextField *resultField;
 
 @end
 
